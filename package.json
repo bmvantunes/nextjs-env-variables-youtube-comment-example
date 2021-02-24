@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "build": "npx cross-env NEXT_PUBLIC_VAR1=public-build-var1 VAR1=private-build-bruno next build",
+    "start": "npx cross-env NEXT_PUBLIC_VAR1=public-rumtime-var1 VAR1=private-runtime-bruno next start"
   },
   "dependencies": {
     "next": "10.0.7",
